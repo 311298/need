@@ -30,7 +30,8 @@ set $menu wofi --show drun
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/cha1nsaw/Pictures/wallpaper/wp5236796-sad-anime-aesthetic-wallpapers.jpg fill
+output HDMI-A-1 bg /home/cha1nsaw/Pictures/wallpaper/-Yys.png fill
+output eDP-1 bg /home/cha1nsaw/Pictures/wallpaper/wallpaper1.jpg fill
 #
 # Example configuration:
 #
@@ -226,6 +227,22 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 # title bar hide
 default_border none
 font pango:monospace 0
+
+# define display output names
+set $disp1 "eDP-1"
+set $disp2 "HDMI-A-1"
+
+# default display outputs for workspaces with fallback to disp1
+workspace 1 output $disp2 
+workspace 2 output $disp2 
+workspace 3 output $disp2 
+workspace 4 output $disp2 
+workspace 5 output $disp2 
+workspace 6 output $disp2 
+workspace 7 output $disp2 
+workspace 8 output $disp2 
+workspace 9 output $disp2
+workspace 10 output $disp1
 
 
 
