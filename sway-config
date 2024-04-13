@@ -244,6 +244,7 @@ workspace 8 output $disp2
 workspace 9 output $disp2
 workspace 10 output $disp1
 
-
+# Toggle workspaces
+bindsym $mod+grave workspace back_and_forth
 
 include /etc/sway/config.d/*
